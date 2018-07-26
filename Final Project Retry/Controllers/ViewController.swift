@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var testerButton: UIButton!
+    
+    
+    //@IBAction func testerAction(_ sender: Any) {
+      //  print("aaa")
+    //}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

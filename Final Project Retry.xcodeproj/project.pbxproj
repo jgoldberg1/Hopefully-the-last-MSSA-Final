@@ -15,6 +15,9 @@
 		375FE6D02107E47B000EC53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375FE6CE2107E47B000EC53F /* LaunchScreen.storyboard */; };
 		375FE6DB2107E47B000EC53F /* Final_Project_RetryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FE6DA2107E47B000EC53F /* Final_Project_RetryTests.swift */; };
 		375FE6E62107E47B000EC53F /* Final_Project_RetryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FE6E52107E47B000EC53F /* Final_Project_RetryUITests.swift */; };
+		375FE6F42107E59F000EC53F /* EventAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */; };
+		375FE6F821093583000EC53F /* EventAdditionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */; };
+		37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		375FE6E12107E47B000EC53F /* Final Project RetryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final Project RetryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375FE6E52107E47B000EC53F /* Final_Project_RetryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_Project_RetryUITests.swift; sourceTree = "<group>"; };
 		375FE6E72107E47B000EC53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionViewController.swift; sourceTree = "<group>"; };
+		375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionTableViewCell.swift; sourceTree = "<group>"; };
+		37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionStartTimeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				375FE6C22107E47A000EC53F /* AppDelegate.swift */,
-				375FE6C42107E47A000EC53F /* ViewController.swift */,
+				375FE6FA210937E1000EC53F /* Views */,
+				375FE6F92109379D000EC53F /* Controllers */,
 				375FE6C62107E47A000EC53F /* Main.storyboard */,
 				375FE6CC2107E47B000EC53F /* Assets.xcassets */,
 				375FE6CE2107E47B000EC53F /* LaunchScreen.storyboard */,
@@ -126,6 +133,24 @@
 				375FE6E72107E47B000EC53F /* Info.plist */,
 			);
 			path = "Final Project RetryUITests";
+			sourceTree = "<group>";
+		};
+		375FE6F92109379D000EC53F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */,
+				375FE6C42107E47A000EC53F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		375FE6FA210937E1000EC53F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */,
+				37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				375FE6C52107E47A000EC53F /* ViewController.swift in Sources */,
+				375FE6F821093583000EC53F /* EventAdditionTableViewCell.swift in Sources */,
+				37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */,
 				375FE6C32107E47A000EC53F /* AppDelegate.swift in Sources */,
 				375FE6CB2107E47A000EC53F /* Final_Project_Retry.xcdatamodeld in Sources */,
+				375FE6F42107E59F000EC53F /* EventAdditionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
