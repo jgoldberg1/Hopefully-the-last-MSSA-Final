@@ -12,43 +12,18 @@ import UIKit
 
 class EventAdditionViewController: UITableViewController {
 
-
-    //this tells you how many cells to make
- //   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-   //     return 8
-    //}
-    
-    
- //   okay so this function says, when you're making a cell, use the one that's named this string and cast it as this class. and that is the template for all cells
-//    override func tableView(_ tableView: UITableView, cellForRowAt: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "nameTextField") as! EventAdditionTableViewCellName
-//        
-//        return cell
-//    }
-
-   
-    
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("cell \(indexPath) was tapped")
-        
-    }
-    
-    //@IBOutlet weak var subviewButton: UIButton!
-    //@IBOutlet weak var nameTextField: UIView!
-    
-    
-   // @IBAction func saveName(_sender: Any) {
-      //  print("aaa")
-    
-    
- //   let startDatePicker = UIDatePicker(frame: CGRect.zero)
   
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var startPicker: UIDatePicker!
+    @IBOutlet weak var endPicker: UIDatePicker!
+    @IBOutlet weak var calendarSortaButton: UITableViewCell!
+    @IBOutlet weak var remindTimeSortaButton: UITableViewCell!
+    @IBOutlet weak var notesTextField: UITableViewCell!
     
-    // when button is pressed, it creates a new tableview cell below the "start" cell, and that cell has a date picker in it
-//    @IBAction func addSubviewWhenPressed(_sender: Any) {
-        
-
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
