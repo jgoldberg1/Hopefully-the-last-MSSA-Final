@@ -14,20 +14,31 @@ class EventAdditionViewController: UITableViewController {
 
   
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var startPicker: UIDatePicker!
-    @IBOutlet weak var endPicker: UIDatePicker!
+    @IBOutlet weak var dueDatePicker: UIDatePicker!
     @IBOutlet weak var calendarSortaButton: UITableViewCell!
     @IBOutlet weak var remindTimeSortaButton: UITableViewCell!
-    @IBOutlet weak var notesTextField: UITableViewCell!
+    @IBOutlet weak var notesTextField: UITextField!
     
     
+    @IBAction func additionBackButtonUnwind(_ sender: Any) {
+        performSegue(withIdentifier: "ToHomeFromAddBack", sender: self)
+    }
     
+    @IBAction func addEvent(_ sender: Any) {
+        performSegue(withIdentifier: "ToHomeFromAddSave", sender: self)
+        if nameTextField.text != nil && notesTextField.text != nil {
+            let newEvent = Assignment(name: nameTextField.text!, dueDate: dueDatePicker.date, notes: notesTextField.text!)
+            print(newEvent)
+        } else {
+            print(nameTextField?.text as Any,  notesTextField?.text as Any, "You're missing a value!")
+        }
+    }
     
+
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
