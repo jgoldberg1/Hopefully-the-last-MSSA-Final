@@ -19,10 +19,13 @@ class EventAdditionViewController: UITableViewController {
     @IBOutlet weak var remindTimeSortaButton: UITableViewCell!
     @IBOutlet weak var notesTextField: UITextField!
     
+    @IBAction func unwindToAdditionFromCalendar(segue:UIStoryboardSegue) { }
     
     @IBAction func additionBackButtonUnwind(_ sender: Any) {
         performSegue(withIdentifier: "ToHomeFromAddBack", sender: self)
     }
+    
+   
     
     @IBAction func addEvent(_ sender: Any) {
         performSegue(withIdentifier: "ToHomeFromAddSave", sender: self)
@@ -33,8 +36,6 @@ class EventAdditionViewController: UITableViewController {
             print(nameTextField?.text as Any,  notesTextField?.text as Any, "You're missing a value!")
         }
     }
-    
-
     
 
     override func viewDidLoad() {

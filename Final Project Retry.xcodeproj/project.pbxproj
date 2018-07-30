@@ -20,6 +20,8 @@
 		375FE6F821093583000EC53F /* EventAdditionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */; };
 		37B1612E210BC66700570637 /* classDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1612D210BC66700570637 /* classDefinitions.swift */; };
 		37B16130210E4CE800570637 /* CalendarChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */; };
+		37B16132210E568E00570637 /* CalendarChoiceTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */; };
+		37B16134210E73CE00570637 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B16133210E73CE00570637 /* DetailViewController.swift */; };
 		37C00A42210A87D700BBDA20 /* color notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A41210A87D700BBDA20 /* color notes.rtf */; };
 		37C00A46210A90D700BBDA20 /* Podfile.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A45210A90D700BBDA20 /* Podfile.rtf */; };
 		37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */; };
@@ -62,6 +64,8 @@
 		375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionTableViewCell.swift; sourceTree = "<group>"; };
 		37B1612D210BC66700570637 /* classDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classDefinitions.swift; sourceTree = "<group>"; };
 		37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChoiceViewController.swift; sourceTree = "<group>"; };
+		37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChoiceTableViewCells.swift; sourceTree = "<group>"; };
+		37B16133210E73CE00570637 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		37C00A41210A87D700BBDA20 /* color notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "color notes.rtf"; sourceTree = "<group>"; };
 		37C00A45210A90D700BBDA20 /* Podfile.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Podfile.rtf; sourceTree = "<group>"; };
 		37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionStartTimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */,
 				375FE6C42107E47A000EC53F /* HomeScreenViewController.swift */,
 				37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */,
+				37B16133210E73CE00570637 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */,
+				37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */,
 				37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */,
 			);
 			path = Views;
@@ -399,7 +405,9 @@
 				37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */,
 				37B1612E210BC66700570637 /* classDefinitions.swift in Sources */,
 				375FE6C32107E47A000EC53F /* AppDelegate.swift in Sources */,
+				37B16132210E568E00570637 /* CalendarChoiceTableViewCells.swift in Sources */,
 				37B16130210E4CE800570637 /* CalendarChoiceViewController.swift in Sources */,
+				37B16134210E73CE00570637 /* DetailViewController.swift in Sources */,
 				375FE6CB2107E47A000EC53F /* Final_Project_Retry.xcdatamodeld in Sources */,
 				375FE6F42107E59F000EC53F /* EventAdditionViewController.swift in Sources */,
 			);

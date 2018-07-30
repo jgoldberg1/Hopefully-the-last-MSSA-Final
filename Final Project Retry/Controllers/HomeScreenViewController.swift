@@ -17,6 +17,8 @@ class HomeScreenViewController: UIViewController {
     
     @IBAction func unwindToHomeFromAdditionBack(segue:UIStoryboardSegue) { }
     
+    @IBAction func unwindToHomeFromDetail(segue:UIStoryboardSegue) { }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
