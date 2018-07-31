@@ -11,6 +11,9 @@ import UIKit
 
 class CalendarChoiceViewController: UITableViewController {
     
+    var chosenCalendar: UISwitch
+    
+    
     //labels
     @IBOutlet weak var workCalLabel: UILabel!
     @IBOutlet weak var schoolCalLabel: UILabel!
@@ -154,23 +157,6 @@ class CalendarChoiceViewController: UITableViewController {
         alt5CalSwitch.setOn(false, animated: true)
         workCalSwitch.setOn(false, animated: true)
     }
-    
-    
-    
-    
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "calendarCell") as! CalendarChoiceTableViewCell
-        cell.calendarCellLabel.text = calendarArray[indexPath.row]
-        cell.calendarCellSwitch.setOn(false, animated: false)
-        return cell
-        
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
-    }
-    */
     
     
     
