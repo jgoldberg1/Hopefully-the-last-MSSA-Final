@@ -8,13 +8,17 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-struct Assignment {
-    let name: String
-    let dueDate: Date
-    let notes:  String
-    
-}
+//struct Assignment {
+//    let name: String = ""
+//    let dueDate: Date = Date()
+//   // let calendar: String
+//    let notes:  String = ""
+//}
+
+
+
 
 var calendarArray = ["Work", "School", "Life", "Health"]
 

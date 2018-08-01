@@ -10,19 +10,26 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
 
-    
+    //when i'm ready to populate collection view, use let assignments = CoreDataHelper.retrieveAssignment()
     
     @IBOutlet weak var testerButton: UIButton!
     
-    @IBAction func unwindToHomeFromAdditionSave(segue:UIStoryboardSegue) { }
+    @IBAction func unwindToHomeFromAdditionSave(segue:UIStoryboardSegue) {
+
+    }
     
-    @IBAction func unwindToHomeFromAdditionBack(segue:UIStoryboardSegue) { }
+    @IBAction func unwindToHomeFromAdditionBack(segue:UIStoryboardSegue) {
+
+    }
     
-    @IBAction func unwindToHomeFromDetail(segue:UIStoryboardSegue) { }
+    @IBAction func unwindToHomeFromDetail(segue:UIStoryboardSegue) {
+      
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
 

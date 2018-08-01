@@ -22,6 +22,7 @@
 		37B16130210E4CE800570637 /* CalendarChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */; };
 		37B16132210E568E00570637 /* CalendarChoiceTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */; };
 		37B16134210E73CE00570637 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B16133210E73CE00570637 /* DetailViewController.swift */; };
+		37B7B5DE2110F5BD008DFEB8 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7B5DD2110F5BD008DFEB8 /* CoreDataHelper.swift */; };
 		37C00A42210A87D700BBDA20 /* color notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A41210A87D700BBDA20 /* color notes.rtf */; };
 		37C00A46210A90D700BBDA20 /* Podfile.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A45210A90D700BBDA20 /* Podfile.rtf */; };
 		37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */; };
@@ -66,6 +67,7 @@
 		37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChoiceViewController.swift; sourceTree = "<group>"; };
 		37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChoiceTableViewCells.swift; sourceTree = "<group>"; };
 		37B16133210E73CE00570637 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		37B7B5DD2110F5BD008DFEB8 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		37C00A41210A87D700BBDA20 /* color notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "color notes.rtf"; sourceTree = "<group>"; };
 		37C00A45210A90D700BBDA20 /* Podfile.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Podfile.rtf; sourceTree = "<group>"; };
 		37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionStartTimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				375FE6C22107E47A000EC53F /* AppDelegate.swift */,
+				37B7B5DD2110F5BD008DFEB8 /* CoreDataHelper.swift */,
 				375FE6FA210937E1000EC53F /* Views */,
 				375FE6F92109379D000EC53F /* Controllers */,
 				375FE6C62107E47A000EC53F /* Main.storyboard */,
@@ -173,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */,
-				375FE6C42107E47A000EC53F /* HomeScreenViewController.swift */,
 				37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */,
+				375FE6C42107E47A000EC53F /* HomeScreenViewController.swift */,
 				37B16133210E73CE00570637 /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -408,6 +411,7 @@
 				37B16132210E568E00570637 /* CalendarChoiceTableViewCells.swift in Sources */,
 				37B16130210E4CE800570637 /* CalendarChoiceViewController.swift in Sources */,
 				37B16134210E73CE00570637 /* DetailViewController.swift in Sources */,
+				37B7B5DE2110F5BD008DFEB8 /* CoreDataHelper.swift in Sources */,
 				375FE6CB2107E47A000EC53F /* Final_Project_Retry.xcdatamodeld in Sources */,
 				375FE6F42107E59F000EC53F /* EventAdditionViewController.swift in Sources */,
 			);

@@ -11,7 +11,9 @@ import UIKit
 
 class CalendarChoiceViewController: UITableViewController {
     
-    var chosenCalendar: UISwitch
+    
+    var chosenCalendar: String = ""
+    //var assignment: Assignment!
     
     
     //labels
@@ -25,6 +27,7 @@ class CalendarChoiceViewController: UITableViewController {
     @IBOutlet weak var alt4CalLabel: UILabel!
     @IBOutlet weak var alt5CalLabel: UILabel!
     @IBOutlet weak var alt6CalLabel: UILabel!
+    
     
     //switches
     @IBOutlet weak var workCalSwitch: UISwitch!
@@ -48,6 +51,8 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "work calendar"
+        
     }
     
     @IBAction func schoolChosen(_ sender: Any) {
@@ -60,6 +65,11 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "school calendar"
+        
+//        let eventAdditionViewController = EventAdditionViewController()
+//        eventAdditionViewController.calendarLabel.text = chosenCalendar
+//        print("Message: \(eventAdditionViewController.calendarLabel.text)")
     }
     
     @IBAction func lifeChosen(_ sender: Any) {
@@ -72,6 +82,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "life calendar"
     }
     
     @IBAction func healthChosen(_ sender: Any) {
@@ -84,6 +95,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "health calendar"
     }
     
     @IBAction func alt1Chosen(_ sender: Any) {
@@ -96,6 +108,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt1 calendar"
     }
     
     @IBAction func alt2Chosen(_ sender: Any) {
@@ -108,6 +121,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt2 calendar"
     }
     
     @IBAction func alt3Chosen(_ sender: Any) {
@@ -120,6 +134,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt3 calendar"
     }
     
     @IBAction func alt4Chosen(_ sender: Any) {
@@ -132,6 +147,7 @@ class CalendarChoiceViewController: UITableViewController {
         workCalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt4 calendar"
     }
     
     @IBAction func alt5Chosen(_ sender: Any) {
@@ -144,6 +160,7 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         workCalSwitch.setOn(false, animated: true)
         alt6CalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt5 calendar"
     }
     
     @IBAction func alt6Chosen(_ sender: Any) {
@@ -156,12 +173,18 @@ class CalendarChoiceViewController: UITableViewController {
         alt4CalSwitch.setOn(false, animated: true)
         alt5CalSwitch.setOn(false, animated: true)
         workCalSwitch.setOn(false, animated: true)
+        chosenCalendar = "alt6 calendar"
     }
     
-    
+
     
     @IBAction func doneButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "ToAdditionFromCalendar", sender: self)
+        let newCalendarInstance = CoreDataHelper.newCalendar()
+        newCalendarInstance.typeChosen = chosenCalendar
+        print(newCalendarInstance)
+        CoreDataHelper.saveCalendar()
+        //print(newCalendarInstance)
 
 }
 

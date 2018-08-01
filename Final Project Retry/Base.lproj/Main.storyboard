@@ -210,25 +210,23 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Section-3" id="SPr-3a-E51" userLabel="Calendar">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="calendarSortaButton" textLabel="cAN-rV-52R" rowHeight="58" style="IBUITableViewCellStyleDefault" id="A6c-Re-VG3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="calendarSortaButton" rowHeight="58" id="A6c-Re-VG3">
                                         <rect key="frame" x="0.0" y="216" width="375" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A6c-Re-VG3" id="Zb3-bx-xbL">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cAN-rV-52R">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="57.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-9C-fBY">
+                                                    <rect key="frame" x="20" y="13" width="168" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Select Calendar "/>
+                                                    <connections>
+                                                        <action selector="selectCalendarButtonTapped:" destination="656-SN-RfK" eventType="touchUpInside" id="eE3-Mo-s24"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="LvG-eR-phE" kind="show" id="ezy-sr-RZR"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -260,11 +258,13 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="calendarSortaButton" destination="A6c-Re-VG3" id="zwS-wm-mwR"/>
                         <outlet property="dueDatePicker" destination="brA-yd-VXW" id="c0E-KH-z1c"/>
                         <outlet property="nameTextField" destination="jhL-ef-UCG" id="JqW-Cy-XT6"/>
                         <outlet property="notesTextField" destination="KOS-Bd-kYE" id="f3F-CC-NYd"/>
                         <segue destination="TTm-0y-GhV" kind="unwind" identifier="ToHomeFromAddBack" unwindAction="unwindToHomeFromAdditionBackWithSegue:" id="iRN-bb-bSO"/>
                         <segue destination="TTm-0y-GhV" kind="unwind" identifier="ToHomeFromAddSave" unwindAction="unwindToHomeFromAdditionSaveWithSegue:" id="uCA-hz-3LJ"/>
+                        <segue destination="LvG-eR-phE" kind="show" identifier="calendar" id="wWF-nS-qdI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cp9-mM-I4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
