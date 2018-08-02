@@ -47,6 +47,7 @@ static func newAssignment() -> Assignment {
         do {
             let fetchRequest = NSFetchRequest<Assignment>(entityName: "Assignment")
             let results = try context.fetch(fetchRequest)
+            
             return results
         } catch let error {
             print("Could not retrieve \(error.localizedDescription)")

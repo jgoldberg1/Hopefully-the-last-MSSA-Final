@@ -7,12 +7,39 @@
 //
 
 import UIKit
+import CoreData
 
-class HomeScreenViewController: UIViewController {
+
+class HomeScreenViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    ///FOR ADDING LATER, ONCE I GET THE CELLS DISPLAYING:
+    ///add function using removeFirst(_:) that removes last x elements in the assignment array
+    ///where x = (total elements in array) - (number of cells displayed)
+    ///this should get rid of all elements in the array that aren't currently in use, preventing a longass array that crashes the app.
+    
+    @IBOutlet weak var detailViewTempButton: UIButton!
+    
+    //  let array: [UIImage] = [UIImage(named: "testerBlueImage")!]
+    let array: [String] = ["a", "b", "c", "d"]
+    
+    
+    //number of views
+ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    
+    
+    //populate views
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "taskSticker", for: indexPath) as! StickerCollectionViewCell
+        cell.testerTextView.text = "aaa"
+        return cell
+    }
 
     //when i'm ready to populate collection view, use let assignments = CoreDataHelper.retrieveAssignment()
     
-    @IBOutlet weak var testerButton: UIButton!
+
     
     @IBAction func unwindToHomeFromAdditionSave(segue:UIStoryboardSegue) {
         
@@ -26,7 +53,8 @@ class HomeScreenViewController: UIViewController {
         
     }
     
-   
+
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +68,13 @@ class HomeScreenViewController: UIViewController {
       
         }
     }
+
+
+
+
+
+
+
     
     
 

@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 import CoreData
 
-//struct Assignment {
-//    let name: String = ""
-//    let dueDate: Date = Date()
-//   // let calendar: String
-//    let notes:  String = ""
-//}
+struct AssignmentStruct {
+    let name: String
+    let dueDate: Date
+   let calendar: String
+    let notes:  String
+}
 
 
 
