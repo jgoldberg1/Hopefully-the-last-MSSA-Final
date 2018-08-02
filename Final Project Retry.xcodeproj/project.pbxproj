@@ -26,6 +26,8 @@
 		37C00A42210A87D700BBDA20 /* color notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A41210A87D700BBDA20 /* color notes.rtf */; };
 		37C00A46210A90D700BBDA20 /* Podfile.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37C00A45210A90D700BBDA20 /* Podfile.rtf */; };
 		37C0AD1C210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */; };
+		37F63A12211250CC000E09B5 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F63A11211250CC000E09B5 /* StickerCollectionViewCell.swift */; };
+		37F63A142112513F000E09B5 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F63A132112513F000E09B5 /* StickerCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		37C00A41210A87D700BBDA20 /* color notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "color notes.rtf"; sourceTree = "<group>"; };
 		37C00A45210A90D700BBDA20 /* Podfile.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Podfile.rtf; sourceTree = "<group>"; };
 		37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionStartTimeTableViewCell.swift; sourceTree = "<group>"; };
+		37F63A11211250CC000E09B5 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		37F63A132112513F000E09B5 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
 		6160BCE06BEB772BE3C1783F /* Pods-Final Project Retry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Project Retry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final Project Retry/Pods-Final Project Retry.debug.xcconfig"; sourceTree = "<group>"; };
 		64A4A0A8EE3C5C1568C49615 /* Pods_Final_Project_RetryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Project_RetryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F5FBB182815670D27B5014 /* Pods-Final Project Retry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Project Retry.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final Project Retry/Pods-Final Project Retry.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				375FE6F32107E59F000EC53F /* EventAdditionViewController.swift */,
 				37B1612F210E4CE700570637 /* CalendarChoiceViewController.swift */,
 				375FE6C42107E47A000EC53F /* HomeScreenViewController.swift */,
+				37F63A132112513F000E09B5 /* StickerCollectionViewController.swift */,
 				37B16133210E73CE00570637 /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				375FE6F721093583000EC53F /* EventAdditionTableViewCell.swift */,
+				37F63A11211250CC000E09B5 /* StickerCollectionViewCell.swift */,
 				37B16131210E568E00570637 /* CalendarChoiceTableViewCells.swift */,
 				37C0AD1B210A641E00D4B33E /* EventAdditionStartTimeTableViewCell.swift */,
 			);
@@ -409,7 +415,9 @@
 				37B1612E210BC66700570637 /* classDefinitions.swift in Sources */,
 				375FE6C32107E47A000EC53F /* AppDelegate.swift in Sources */,
 				37B16132210E568E00570637 /* CalendarChoiceTableViewCells.swift in Sources */,
+				37F63A12211250CC000E09B5 /* StickerCollectionViewCell.swift in Sources */,
 				37B16130210E4CE800570637 /* CalendarChoiceViewController.swift in Sources */,
+				37F63A142112513F000E09B5 /* StickerCollectionViewController.swift in Sources */,
 				37B16134210E73CE00570637 /* DetailViewController.swift in Sources */,
 				37B7B5DE2110F5BD008DFEB8 /* CoreDataHelper.swift in Sources */,
 				375FE6CB2107E47A000EC53F /* Final_Project_Retry.xcdatamodeld in Sources */,

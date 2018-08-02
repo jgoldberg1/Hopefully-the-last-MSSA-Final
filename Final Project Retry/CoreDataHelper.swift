@@ -74,14 +74,17 @@ static func newAssignment() -> Assignment {
         }
     }
     
-    static func retrieveCalendar() -> [CalendarChoice] {
+    static func retrieveCalendar() -> CalendarChoice? {
+       
         do {
-            let fetchRequest = NSFetchRequest<CalendarChoice>(entityName: "CalendarChoice")
-            let results = try context.fetch(fetchRequest)
-            return results
+             let fetchRequest = NSFetchRequest<CalendarChoice>(entityName: "CalendarChoice")
+            let results = try context.fetch(fetchRequest) //returns an array of every calendar choice ever (bad, but usable)
+        let lastIndex = results.endIndex - 1 //finds the last index number
+           
+            return results[lastIndex] //returns the calendar choice at the last index number (most recent)
         } catch let error {
             print("Could not retrieve \(error.localizedDescription)")
-            return []
+            return nil
         }
     }
 
